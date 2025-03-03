@@ -7,42 +7,31 @@ assignees: ''
 
 ---
 
-name: Reporte de Bug
-description: Reporta un problema o error encontrado en el sistema.
-title: "[BUG] Breve descripción del problema"
-labels: ["bug", "pendiente de revisión"]
-assignees: ["tu-usuario-o-equipo"]
+- type: markdown
+  attributes:
+    value: |
+      ## 🐞 Bug Summary
+      Describe en una línea el problema encontrado.
 
-body:
-  - type: markdown
-    attributes:
-      value: "Gracias por tomarte el tiempo de reportar un bug. Por favor, completa la información de manera detallada."
+      ## 📌 Steps to Reproduce
+      1. Primer paso
+      2. Segundo paso
+      3. ...
 
-  - type: input
-    id: resumen
-    attributes:
-      label: "Descripción breve"
-      description: "Explica en una línea el problema encontrado."
-      placeholder: "Ejemplo: Error en el módulo de pagos al procesar tarjetas Visa"
-    validations:
-      required: true
+      ## ✅ Expected Result
+      ¿Qué debería suceder después de seguir los pasos anteriores?
 
-  - type: textarea
-    id: descripcion
-    attributes:
-      label: "Descripción detallada del problema"
-      description: "Describe el problema con la mayor cantidad de detalles posible. ¿Qué está pasando y qué debería ocurrir?"
-      placeholder: "Cuando intento pagar con tarjeta Visa, la transacción se cancela sin motivo..."
-    validations:
-      required: true
+      ## ❌ Actual Result
+      ¿Qué sucedió realmente?
 
-  - type: textarea
-    id: pasos
-    attributes:
-      label: "Pasos para reproducirlo"
-      description: "Describe cómo replicar el error paso a paso."
-      placeholder: |
-        1. Ir a la página de pagos.
-        2. Ingresar los datos de una tarjeta Visa.
-        3. Presionar el botón de pagar.
-        4. Se muestra un mensaje de error inesperado.
+      ## 🌍 Environment
+      - **Sistema Operativo:** _Ejemplo: Windows 10 Pro, macOS Sonoma_
+      - **Navegador (si aplica):** _Ejemplo: Chrome 120.0, Firefox 110.1_
+      - **Versión del Software:** _Ejemplo: v1.5.3_
+      - **Entorno (si aplica):** _Ejemplo: Staging, Producción_
+
+      ## 📎 Attachments
+      Adjunta capturas de pantalla, logs o cualquier otro archivo relevante para diagnosticar el problema.
+
+      ## 📝 Notes/Additional Information
+      Cualquier otra información que pueda ser útil para entender mejor el problema.
